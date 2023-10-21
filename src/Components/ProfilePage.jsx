@@ -31,15 +31,10 @@ const ProfilePage = ({ users, posts }) => {
         // console.log(value)
         const data = await fetch(`${timeUrl}/${value}`);
         const parsedZone = await data.json();
-        console.log(parsedZone.datetime);
-        // const formatDat = Moment(parsedZone.datetime, 'hh:mm:ss').format('HH:mm:ss');
-        const formatDat = Date.parse(parsedZone.datetime);
-        console.log(formatDat)
-        
-        
-
+        const formatDat = Moment(parsedZone.datetime, 'hh:mm:ss').format('HH:mm:ss');
+        // const formatDat = Date.parse(parsedZone.datetime);
+        // console.log(formatDat)
         setZoneTime(formatDat);
-
     }
 
     const displayModal = (post) => {
