@@ -1,0 +1,47 @@
+.profile {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card {
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.posts {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.postBody {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
